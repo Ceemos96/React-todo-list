@@ -14,7 +14,7 @@
 - Babel
 
 ## Link to project online
-- [Online Version](https://ceemos96.github.io/React-todo-list/)
+- [Online Version](https://react-todo-ap.herokuapp.com/)
 
 ## Getting Started
 
