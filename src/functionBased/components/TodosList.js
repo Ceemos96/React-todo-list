@@ -5,15 +5,17 @@
 import React from 'react';
 import TodoItem from './TodoItem';
 
-const TodosList = (props) => (
+const TodosList = ({
+  todos, handleChangeProps, deleteTodoProps, setUpdate,
+}) => (
   <ul className="list">
-    {props.todos.map((todo) => (
+    {todos.map((todo) => (
       <TodoItem
         key={todo.id}
         todo={todo}
-        handleChangeProps={props.handleChangeProps}
-        deleteTodoProps={props.deleteTodoProps}
-        setUpdate={props.setUpdate}
+        handleChangeProps={handleChangeProps}
+        deleteTodoProps={deleteTodoProps}
+        setUpdate={setUpdate}
       />
     ))}
   </ul>
